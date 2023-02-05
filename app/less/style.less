@@ -1,0 +1,105 @@
+@import "./params/mix";
+@import "./header.less";
+@import "./main.less";
+@import "./choose.less";
+@import "./design.less";
+@import "./says.less";
+@import "./work.less";
+@import "./footer.less";
+@import "./liza.less";
+
+body {
+  font-family: "Lato", "san-serif";
+}
+
+.activeBars {
+  display: none;
+  .md(display, block);
+}
+
+.activeMenuBars {
+  display: block;
+  .md(display, none);
+}
+
+p.text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 30px;
+  color: #919299;
+
+  .sm-block({
+    font-size: 15px;
+    line-height: 25px;
+  })
+}
+
+button.size {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: white;
+  background-color: #F78CB6;
+  padding: 16px 25px;
+  margin-top: 42px;
+  border: none;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+    transition: 1s;
+    background: #FFE8AB;
+    color: black;
+  }
+
+  .sm-block({
+    font-size: 15px;
+    padding: 12px 20px;
+  })
+}
+
+.errorMsg {
+  color: rgb(255, 0, 0);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 10px;
+  display: none;
+}
+
+h3.book {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  color: #F78CB6;
+}
+
+h2.title {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  color: #56597A;
+  margin-top: 6px;
+}
+
+.gogo {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #56597A;
+  margin-bottom: 35px;
+  margin-top: 20px;
+  .sm-block({
+    text-align: center;
+  })
+}

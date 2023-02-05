@@ -1,0 +1,99 @@
+.design{
+    width: 100%;
+    margin-top: 180px;
+    img{
+        width: 100%;
+        .md-block({
+            width: 100%;
+        })
+    }
+    .var{
+        text-align: left;
+        margin-left: 80px;
+        .md-block({
+          margin: 0;
+        });
+        h3.book{
+            text-align: left;
+            .sm-block({
+                font-size: 20px;
+                line-height: 30px;
+            })
+        }
+        h2.title{
+            line-height: 62px;
+            text-align: left;
+            .sm-block({
+                font-size: 30px;
+                line-height: 40px;
+            })
+        }
+    }
+    .Learn {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.96);
+        z-index: 11111;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        h3 {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 700;
+            color: #F78BB6;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            .md-block({
+              font-size: 30px;
+              font-weight: 500;
+              margin-bottom: 20px;
+            });
+            .sm-block({
+              font-size: 25px;
+              font-weight: 500;
+              margin-bottom: 20px;
+            });
+        }
+        .img{
+
+           margin: auto;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            img{
+                margin: 50px 20px;
+                .sm-block({
+                    width: 70px;
+                    height: 50px;
+                    margin: 0px 10px;
+                })
+            }
+        }
+       .bot{
+        text-align: center;
+       }
+        .close {
+          position: absolute;
+          top: 10px;
+          right: 30px;
+          display: block;
+          border: 2px solid #F78BB6;
+          padding: 15px 20px;
+          color: white;
+          border-radius: 5px;
+          font-size: 18px;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            background-color: #F78BB6;
+            transform: rotate(180deg);
+          }
+        }
+    }
+}

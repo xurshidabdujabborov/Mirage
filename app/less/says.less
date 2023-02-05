@@ -1,0 +1,105 @@
+.says{
+    width: 100%;
+    margin-top: 200px;
+    img{
+        width: 100%;
+        .md-block({
+            width: 100%;
+        })
+    }
+    .left{
+        margin-top: 60px;
+        text-align: left;
+        h3.book{
+            text-align: left;
+            .sm-block({
+                font-size: 20px;
+                line-height: 30px;
+            })
+        }
+        h2.title{
+            line-height: 60px;
+            text-align: left;
+            .sm-block({
+                font-size: 30px;
+                line-height: 40px;
+            })
+        }
+        p.text{
+            text-align: left;
+        }
+        .flex{
+            text-align: left;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            a{
+                font-size: 28px;
+                font-weight: 700;
+                line-height: 32px;
+                color: #56597A;
+                .sm-block({
+                    font-size: 20px;
+                    line-height: 25px;
+                })
+            }
+            span{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                margin-top: 5px;
+                color: #ABABAB;
+            }
+        }
+    }
+    .owl-carousel{
+        margin-top: 150px;
+        .md-block({
+          display: none;
+        });
+        .img{
+            text-align: center;
+            margin: 0px 20px;
+            img{
+                width: 150px;
+                height: 45px;
+            }
+        }
+        .owl-nav {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 10%;
+            left: 0px;
+            transform: translateY(-50%);
+            width: 100%;
+            .owl-prev,
+            .owl-next {
+              font-size: 18px;
+              font-weight: 700;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 1px solid #d5d4d4;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: 0.2s;
+              cursor: pointer;
+              &:hover {
+                background-color: #F78CB6;
+      
+                color: white;
+              }
+            }
+            .owl-prev {
+              position: absolute;
+              left: -30px;
+            }
+            .owl-next {
+              position: absolute;
+              right: -30px;
+            }
+          }
+    }
+}
